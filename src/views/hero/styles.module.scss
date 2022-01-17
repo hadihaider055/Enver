@@ -1,0 +1,32 @@
+.herobg {
+  position: absolute;
+  background: linear-gradient(
+    180deg,
+    rgba(84, 84, 212, 0.27) 0%,
+    rgba(84, 84, 212, 0.1134) 100%
+  );
+  filter: blur(100px);
+  border-radius: 233.5px;
+  transform: rotate(-54.37deg);
+  top: 0%;
+  width: 600px;
+  height: 500px;
+  left: -10%;
+  z-index: -1;
+}
+.herobgDown {
+  position: absolute;
+  background: linear-gradient(
+    180deg,
+    rgba(84, 84, 212, 0.27) 0%,
+    rgba(84, 84, 212, 0.1134) 100%
+  );
+  filter: blur(200px);
+  border-radius: 233.5px;
+  transform: rotate(-54.37deg);
+  bottom: 0%;
+  width: 600px;
+  height: 500px;
+  right: -30%;
+  z-index: -1;
+}

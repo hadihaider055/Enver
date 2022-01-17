@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&family=Open+Sans:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #19191b;
+  overflow-x: hidden;
+}
+
+.font-nunito {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.font-sans {
+  font-family: "Open Sans", sans-serif;
+}
+
+.blue-glassmorphism {
+  background: #5454d4;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
