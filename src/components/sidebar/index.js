@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-scroll";
 import { StaticImage } from "gatsby-plugin-image";
+import { IoMdClose } from "react-icons/io";
 
 const Sidebar = ({ toggleExpansion, isExpanded }) => {
   return (
-    <div className="fixed z-40 w-screen h-screen right-0 left-0 bottom-0 blue-glassmorphism slide-in">
+    <div className="fixed z-40 w-screen h-screen top-0 right-0 left-0 bottom-0 blue-glassmorphism slide-in">
       <div className="flex items-center justify-between px-6 py-8">
         <Link to="/">
           <StaticImage
@@ -17,7 +18,10 @@ const Sidebar = ({ toggleExpansion, isExpanded }) => {
             className="cursor-pointer"
           />
         </Link>
-        <button
+        <IoMdClose fontSize={30} 
+          className="cursor-pointer"
+          onClick={() => toggleExpansion(!isExpanded)}/>
+        {/* <button
           type="button"
           className="cursor-pointer"
           onClick={() => toggleExpansion(!isExpanded)}
@@ -30,7 +34,7 @@ const Sidebar = ({ toggleExpansion, isExpanded }) => {
             height={40}
             layout="fixed"
           />
-        </button>
+        </button> */}
       </div>
       <ul className="flex flex-col items-center justify-between font-nunito text-primary font-semibold tracking-wide ">
         <li className=" hover:text-gray-200 cursor-pointer active:text-secondary mb-10 mt-20">

@@ -7,7 +7,10 @@ const Navbar = () => {
   const [isExpanded, toggleExpansion] = useState(false);
 
   return (
-    <nav className="max-w-screen-xl w-full h-24 mx-auto py-7 flex items-center justify-between text-white px-3 z-50">
+    <nav
+      className="max-w-screen-xl w-full h-24 mx-auto py-7 flex items-center justify-between text-white px-3 z-50"
+      id="home"
+    >
       <div>
         <Link to="/">
           <StaticImage

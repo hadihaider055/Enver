@@ -1,22 +1,25 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
+import { Link as LinkS } from "react-scroll";
 
 const Footer = () => {
-  const ScrolltoTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   return (
     <div className="max-w-screen-xl w-full mx-auto h-full py-10 px-6">
       <div className="flex items-center justify-between flex-col md:flex-row">
-        <div onClick={ScrolltoTop} className="cursor-pointer">
+        <LinkS
+          className="cursor-pointer"
+          spy={true}
+          smooth={true}
+          duration={1100}
+          to="home"
+        >
           <StaticImage
             src={"../../images/logo.png"}
             alt="Enver"
             placeholder="blurred"
           />
-        </div>
+        </LinkS>
         <div className="flex-[0.5]">
           <ul className="flex items-center justify-between font-nunito text-primary font-base tracking-wide flex-col md:flex-row">
             <li className="hover:text-secondary transition duration-700 ease-in-out active:text-secondary mt-1">

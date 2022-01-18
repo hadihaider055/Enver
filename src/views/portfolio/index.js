@@ -7,6 +7,8 @@ import {
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 import { portfolioData } from "./data";
+import Zoom from "react-reveal/Zoom";
+import Fade from "react-reveal/Fade";
 
 const Portfolio = () => {
   const settings = {
@@ -62,9 +64,11 @@ const Portfolio = () => {
       className="mt-28 max-w-screen-xl w-full mx-auto px-6 relative"
     >
       <div>
-        <h2 className="font-nunito text-white text-5xl font-bold tracking-wide">
-          Our Awesome Portofolio
-        </h2>
+        <Zoom right duration={2000}>
+          <h2 className="font-nunito text-white text-5xl font-bold tracking-wide">
+            Our Awesome Portofolio
+          </h2>
+        </Zoom>
         <img
           src={require("../../images/circles.png").default}
           alt="Circles"
@@ -92,17 +96,19 @@ const Portfolio = () => {
           <FontAwesomeIcon icon={faChevronRight} />
         </div>
         <div className="w-full">
-          <Slider {...settings} ref={slider}>
-            {portfolioData.map((item) => (
-              <div key={item.id} className="flex w-full justify-center py-2">
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full md:w-4/5 review-card p-5 md:p-20"
-                />
-              </div>
-            ))}
-          </Slider>
+          <Fade bottom duration={2000}>
+            <Slider {...settings} ref={slider}>
+              {portfolioData.map((item) => (
+                <div key={item.id} className="flex w-full justify-center py-2">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full md:w-4/5 review-card p-5 md:p-20"
+                  />
+                </div>
+              ))}
+            </Slider>
+          </Fade>
         </div>
       </div>
       <img
