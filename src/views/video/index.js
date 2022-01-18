@@ -4,7 +4,7 @@ import { BsPlayFill } from "react-icons/bs";
 
 const VideoView = () => {
   return (
-    <div className="max-w-screen-xl w-full mt-24 mx-auto px-6">
+    <div className="max-w-screen-xl w-full mt-24 mx-auto px-6" id="about">
       <div className="flex md:justify-between items-start flex-col md:flex-row justify-start">
         <h2 className="font-sans text-white text-5xl font-bold tracking-wide">
           Why Enver Is The <br />

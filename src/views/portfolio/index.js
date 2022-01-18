@@ -76,7 +76,7 @@ const Portfolio = () => {
       </div>
       <div className="w-full">
         <div
-          className={`flex absolute ${styles.reviewsBtnLeft} ${currentclass} bg-secondary rounded-full px-5 py-3  text-3xl z-10 text-white items-center justify-center cursor-pointer`}
+          className={`flex absolute bg-gray-700 hover:bg-secondaryDark transition ease-in-out duration-700 ${styles.reviewsBtnLeft} ${currentclass} bg-secondary rounded-full px-5 py-3  text-3xl z-10 text-white items-center justify-center cursor-pointer`}
           onClick={() => {
             previous();
           }}
@@ -84,7 +84,7 @@ const Portfolio = () => {
           <FontAwesomeIcon icon={faChevronLeft} />
         </div>
         <div
-          className={`flex absolute right-0 ${styles.reviewsBtnRight} ${currentclass} bg-secondary rounded-full px-5 py-3 text-3xl z-10 text-white items-center justify-center cursor-pointer`}
+          className={`flex absolute bg-gray-700 right-0 hover:bg-secondaryDark transition ease-in-out duration-700 ${styles.reviewsBtnRight} ${currentclass} bg-secondary rounded-full px-5 py-3 text-3xl z-10 text-white items-center justify-center cursor-pointer`}
           onClick={() => {
             next();
           }}
@@ -105,6 +105,13 @@ const Portfolio = () => {
           </Slider>
         </div>
       </div>
+      <img
+        src={require("../../images/vector zigzag.png").default}
+        alt="Zigzag"
+        className="absolute -bottom-36 md:bottom-0 left-5"
+        width={50}
+        height={50}
+      />
     </div>
   );
 };
