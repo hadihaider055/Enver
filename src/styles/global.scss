@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&family=Open+Sans:wght@400;500;600;700;800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
   margin: 0;
@@ -24,6 +27,26 @@ body {
   -webkit-backdrop-filter: blur(5px);
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.fullopacity {
+  opacity: 1;
+}
+
+.lostopacity {
+  animation: lostOpacity 3s ease-in-out;
+}
+
+@keyframes lostOpacity {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+  }
+  100% {
+    opacity: 0;
+    position: absolute;
+    top: 56%;
+  }
+}
