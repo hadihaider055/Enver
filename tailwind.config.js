@@ -5,7 +5,12 @@ module.exports = {
       colors: {
         primary: "rgba(255, 255, 255, 0.7)",
         secondary: "#5454D4",
-        tertiary: "#5454D4",
+        secondaryDark: "#3e3eb8",
+        secondaryRed: "#f04037",
+        secondaryYellow: "#fedc5a",
+        "secondary-light": "#5454d42b",
+        "secondaryYellow-light": "#fedd5a22",
+        "secondaryRed-light": "#f040372c",
       },
       keyframes: {
         "slide-in": {

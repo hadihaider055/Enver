@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 
 const Snackbar = () => {
   return (
-    <div className="fixed z-10 w-screen h-screen top-20 right-0 left-0 bottom-0 blue-glassmorphism slide-in">
+    <div className="fixed z-50 w-screen h-screen top-20 right-0 left-0 bottom-0 blue-glassmorphism slide-in">
       <ul className="flex flex-col items-center justify-between font-nunito text-primary font-semibold tracking-wide ">
         <li className=" active:text-secondary mb-10 mt-20">
           <Link to="home">Home</Link>

@@ -21,7 +21,7 @@ const Hero = () => {
             </p>
             <button
               type="button"
-              className="text-white bg-tertiary rounded-lg px-5 py-4 w-44 mt-10 flex items-center justify-between font-nunito text-lg"
+              className="text-white bg-secondary hover:bg-secondaryDark transition duration-700 ease-in-out rounded-lg px-5 py-4 w-44 mt-10 flex items-center justify-between font-nunito text-lg"
             >
               Our Services <FiArrowUpRight fontSize={24} />
             </button>
