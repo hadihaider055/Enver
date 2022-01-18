@@ -19,7 +19,7 @@ const Services = () => {
           width={50}
           height={50}
         />
-        <h2 className="md:text-center font-sans text-white text-5xl font-bold tracking-wide">
+        <h2 className="md:text-center font-nunito text-white text-5xl font-bold tracking-wide">
           The Service We Provide For You
         </h2>
         <StaticImage
