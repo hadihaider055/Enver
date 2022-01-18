@@ -8,10 +8,10 @@ const Services = () => {
   return (
     <div
       id="services"
-      className="mt-28 max-w-screen-xl w-full mx-auto px-6 relative"
+      className="mt-28 max-w-screen-xl w-full mx-auto px-6 relative overflow-visible"
     >
       <span className={styles.herobg}></span>
-      <div className="md:w-1/2 mx-auto">
+      <div className="md:w-1/2 mx-auto overflow-visible">
         <img
           src={require("../../images/triangles.png").default}
           alt="Triangles"
@@ -20,7 +20,7 @@ const Services = () => {
           height={50}
         />
         <Fade top duration={2000}>
-          <h2 className="md:text-center font-nunito text-white text-5xl font-bold tracking-wide">
+          <h2 className="md:text-center font-nunito text-white text-5xl font-bold tracking-wide overflow-visible">
             The Service We Provide For You
           </h2>
         </Fade>
@@ -32,11 +32,11 @@ const Services = () => {
           alt="Add Icon"
         />
       </div>
-      <div className="grid md:grid-cols-3 sm:grid-cols-2 mt-20">
+      <div className="grid md:grid-cols-3 sm:grid-cols-2 mt-20 overflow-visible">
         {data.map((item) => (
           <div
             key={item.id}
-            className="max-w-[400px] w-full mx-auto text-center p-5"
+            className="max-w-[400px] w-full mx-auto text-center p-5 overflow-visible"
           >
             <Fade bottom duration={2000}>
               <ServiceCard

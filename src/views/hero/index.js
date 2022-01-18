@@ -6,12 +6,12 @@ import Fade from "react-reveal/Fade";
 
 const Hero = () => {
   return (
-    <div className="relative">
+    <div className="relative overflow-visible">
       <span className={styles.herobg}></span>
       <div className="max-w-screen-xl w-full px-6 mx-auto flex items-center justify-center  md:justify-between flex-col md:flex-row">
         <div>
           <Fade left duration={2000}>
-            <h1 className="font-sans text-white text-6xl font-bold tracking-wide">
+            <h1 className="font-sans text-white text-6xl font-bold tracking-wide overflow-visible">
               Build Your <br /> Awesome <br /> Platform
             </h1>
             <p className="font-nunito text-primary font-normal tracking-wide mt-10">

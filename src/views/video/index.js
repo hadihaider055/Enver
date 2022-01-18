@@ -6,9 +6,9 @@ import Fade from "react-reveal/Fade";
 const VideoView = () => {
   return (
     <div className="max-w-screen-xl w-full mt-24 mx-auto px-6" id="about">
-      <div className="flex md:justify-between items-start flex-col md:flex-row justify-start">
+      <div className="flex md:justify-between items-start flex-col md:flex-row justify-start overflow-visible">
         <Fade bottom duration={2000}>
-          <h2 className="font-sans text-white text-5xl font-bold tracking-wide">
+          <h2 className="font-sans text-white text-5xl font-bold tracking-wide overflow-visible">
             Why Enver Is The <br />
             Best Choice?
           </h2>
@@ -23,18 +23,14 @@ const VideoView = () => {
 
       <Fade zoom duration={2000}>
         <div className="mt-20">
-          <StaticImage
-            src={"../../images/video.png"}
-            alt="Video"
-            className="w-full object-contain"
-            placeholder="blurred"
-          />
-          <button className="absolute z-10 left-1/2 -ml-10 md:mt-72 mt-20">
-            <BsPlayFill
-              fontSize={80}
-              className=" text-white bg-secondary rounded-full p-5 border-0 text-center opacity-90"
-            />
-          </button>
+          <iframe
+            src="https://www.youtube.com/embed/iwyyxEJCIuU"
+            title="YouTube video player"
+            frameBorder="2"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="rounded-lg object-contain w-full h-96 md:h-[600px] "
+          ></iframe>
         </div>
       </Fade>
     </div>

@@ -6,10 +6,10 @@ import Fade from "react-reveal/Fade";
 const Contact = () => {
   return (
     <div
-      className="w-full bg-[rgba(0,0,0,0.2)] h-full pt-44 md:mt-20 py-28 "
+      className="w-full bg-[rgba(0,0,0,0.2)] h-full mt-44 md:mt-20 py-28 overflow-visible"
       id="contact"
     >
-      <div className="max-w-screen-xl w-full mx-auto px-6 relative">
+      <div className="max-w-screen-xl w-full mx-auto px-6 relative overflow-visible">
         <span className="herobg"></span>
         <img
           src={require("../../images/add.png").default}
@@ -18,9 +18,9 @@ const Contact = () => {
           height={30}
           alt="Add Icon"
         />
-        <div className="flex items-start flex-col md:flex-row  justify-between">
+        <div className="flex items-start flex-col md:flex-row  justify-between overflow-visible">
           <Zoom right duration={2000}>
-            <h2 className="font-nunito text-white text-5xl font-bold tracking-wide md:w-3/5">
+            <h2 className="font-nunito text-white text-5xl font-bold tracking-wide md:w-3/5 overflow-visible">
               Contact us for the service you want to use
             </h2>
           </Zoom>

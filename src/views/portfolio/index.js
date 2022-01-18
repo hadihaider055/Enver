@@ -61,11 +61,11 @@ const Portfolio = () => {
   return (
     <div
       id="portfolio"
-      className="mt-28 max-w-screen-xl w-full mx-auto px-6 relative"
+      className="mt-28 max-w-screen-xl w-full mx-auto px-6 relative overflow-visible"
     >
       <div>
         <Zoom right duration={2000}>
-          <h2 className="font-nunito text-white text-5xl font-bold tracking-wide">
+          <h2 className="font-nunito text-white text-5xl font-bold tracking-wide overflow-hidden">
             Our Awesome Portofolio
           </h2>
         </Zoom>
@@ -78,7 +78,7 @@ const Portfolio = () => {
         />
         <span className={styles.herobgDown}></span>
       </div>
-      <div className="w-full">
+      <div className="w-full overflow-visible">
         <div
           className={`flex absolute bg-gray-700 hover:bg-secondaryDark transition ease-in-out duration-700 ${styles.reviewsBtnLeft} ${currentclass} bg-secondary rounded-full px-5 py-3  text-3xl z-10 text-white items-center justify-center cursor-pointer`}
           onClick={() => {
@@ -95,11 +95,14 @@ const Portfolio = () => {
         >
           <FontAwesomeIcon icon={faChevronRight} />
         </div>
-        <div className="w-full">
+        <div className="w-full overflow-visible">
           <Fade bottom duration={2000}>
             <Slider {...settings} ref={slider}>
               {portfolioData.map((item) => (
-                <div key={item.id} className="flex w-full justify-center py-2">
+                <div
+                  key={item.id}
+                  className="flex w-full justify-center py-2 overflow-visible"
+                >
                   <img
                     src={item.image}
                     alt={item.title}
